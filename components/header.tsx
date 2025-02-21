@@ -1,11 +1,11 @@
 'use client';
-import React from 'react';
+
+import React , { useEffect, useState } from 'react';
 import { ThemeToggle } from './ThemeToggle';
 import { UserMenu } from './UserMenu';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
-import { useEffect, useState } from 'react';
 import { createClient } from '@/utils/supabase/client';
 import type { User } from '@supabase/supabase-js';
 import { usePathname } from 'next/navigation';
@@ -59,7 +59,7 @@ export const Header = ({ className }: HeaderProps) => {
           href={user ? '/projects' : '/'}
           className="flex items-center space-x-2 font-bold text-xl hover:text-primary transition-colors"
         >
-          ProjeX
+          TetiTask
         </Link>
 
         <div className="flex items-center gap-4">
