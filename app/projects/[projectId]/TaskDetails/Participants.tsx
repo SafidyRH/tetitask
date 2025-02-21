@@ -1,6 +1,6 @@
 import { UserCard } from '@/components/UserCard';
-import { useProjectOwner } from '@/hooks/useProjectOwner';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
+import { useProjectOwner } from '@/hooks/use-project-owner';
+import { useProjectQueries } from '@/hooks/use-project-queries';
 import { useParams } from 'next/navigation';
 
 export const Participants = () => {

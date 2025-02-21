@@ -1,6 +1,6 @@
 import { createClient } from '@/utils/supabase/server';
 import { users, type IUser } from '@/utils/users';
-import { ProfileForm } from './ProfileForm';
+import { ProfileForm } from './profile-form';
 import { redirect } from 'next/navigation';
 
 export default async function ProfilePage() {

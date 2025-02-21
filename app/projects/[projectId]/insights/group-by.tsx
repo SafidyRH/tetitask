@@ -5,18 +5,18 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { useInsightsContext } from '@/contexts/insightsContext';
+import { useInsightsContext } from '@/contexts/insights-context';
 import { SquareChevronDown, Tag } from 'lucide-react';
 
-export const XAxisOptions: {
-  value: CustomField;
+export const GroupByOptions: {
+  value: CustomField | 'none';
   label: string;
   icon: JSX.Element;
 }[] = [
   {
-    value: 'status',
-    label: 'Status',
-    icon: <SquareChevronDown className="w-4 h-4 mr-2" />,
+    value: 'none',
+    label: 'None',
+    icon: <></>,
   },
   {
     value: 'label',
@@ -33,25 +33,30 @@ export const XAxisOptions: {
     label: 'Priority',
     icon: <SquareChevronDown className="w-4 h-4 mr-2" />,
   },
+  {
+    value: 'status',
+    label: 'Status',
+    icon: <SquareChevronDown className="w-4 h-4 mr-2" />,
+  },
 ];
 
-export const XAxis = () => {
-  const { setXAxis, groupBy } = useInsightsContext();
+export const GroupBy = () => {
+  const { setGroupBy, xAxis } = useInsightsContext();
 
   return (
     <div>
-      <h2 className="text-sm mb-2">X-axis</h2>
+      <h2 className="text-sm mb-2">Group by (optional)</h2>
       <Select
-        defaultValue="status"
-        onValueChange={(value) => setXAxis(value as CustomField)}
+        defaultValue="none"
+        onValueChange={(value) => setGroupBy(value as CustomField)}
       >
         <SelectTrigger>
           <SelectValue placeholder="Status" />
         </SelectTrigger>
         <SelectContent>
-          {XAxisOptions.map(
+          {GroupByOptions.map(
             (option) =>
-              groupBy !== option.value && (
+              option.value !== xAxis && (
                 <SelectItem value={option.value} key={option.value}>
                   <div className="flex">
                     {option.icon}

@@ -1,5 +1,5 @@
 import { Separator } from '@/components/ui/separator';
-import { NewProjectForm } from './NewProjectForm';
+import { NewProjectForm } from './new-project-form';
 
 export default function NewProjectPage() {
   return (

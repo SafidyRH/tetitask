@@ -12,7 +12,7 @@ import {
   BarChartHorizontalBig,
   LineChart,
 } from 'lucide-react';
-import { useInsightsContext } from '@/contexts/insightsContext';
+import { useInsightsContext } from '@/contexts/insights-context';
 
 export const Layout = () => {
   const { setLayout } = useInsightsContext();

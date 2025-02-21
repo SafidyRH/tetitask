@@ -3,7 +3,7 @@
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import { ProjectActions } from './ProjectActions';
-import { useProjectAccess } from '@/hooks/useProjectAccess';
+import { useProjectAccess } from '@/hooks/use-project-access';
 import { ProjectAction } from '@/consts';
 
 interface ProjectItemProps {

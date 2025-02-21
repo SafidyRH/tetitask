@@ -12,14 +12,14 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { useActivityQueries } from '@/hooks/useActivityQueries';
-import { useCurrentUser } from '@/hooks/useCurrentUser';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
-import { useTaskQueries } from '@/hooks/useTaskQueries';
+import { useCurrentUser } from '@/hooks/use-current-user';
+import { useProjectQueries } from '@/hooks/use-project-queries';
+import { useTaskQueries } from '@/hooks/use-task-queries';
 import { Settings } from 'lucide-react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { useTaskDetails } from '../Board/TaskDetailsContext';
+import { useTaskDetails } from '../Board/task-details-context';
 
 export const TaskLabels = () => {
   const params = useParams();

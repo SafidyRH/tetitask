@@ -4,7 +4,7 @@ import { Check, Copy } from 'lucide-react';
 import { useState } from 'react';
 import { EditableTitle } from './EditableTitle';
 import { TaskActionsMenu } from './TaskActionsMenu';
-import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { useCopyToClipboard } from '@/hooks/use-copy-to-clipboard';
 import { usePathname } from 'next/navigation';
 import { tasks } from '@/utils/tasks';
 

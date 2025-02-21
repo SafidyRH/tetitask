@@ -9,7 +9,7 @@ import {
 import { Ellipsis, LineChart, Settings } from 'lucide-react';
 import Link from 'next/link';
 import { Board } from './Board';
-import { useProjectAccess } from '@/hooks/useProjectAccess';
+import { useProjectAccess } from '@/hooks/use-project-access';
 import { ProjectAction } from '@/consts';
 
 interface ProjectDetailsProps {

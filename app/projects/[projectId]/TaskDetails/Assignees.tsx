@@ -1,7 +1,7 @@
 'use client';
-import { useTaskDetails } from '../Board/TaskDetailsContext';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
-import { useTaskQueries } from '@/hooks/useTaskQueries';
+import { useTaskDetails } from '../Board/task-details-context';
+import { useProjectQueries } from '@/hooks/use-project-queries';
+import { useTaskQueries } from '@/hooks/use-task-queries';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -15,11 +15,11 @@ import {
 import { Separator } from '@/components/ui/separator';
 import { Settings } from 'lucide-react';
 import { useEffect, useState, useMemo } from 'react';
-import { useCurrentUser } from '@/hooks/useCurrentUser';
+import { useCurrentUser } from '@/hooks/use-current-user';
 import { useParams } from 'next/navigation';
 import { UserCard } from '@/components/UserCard';
 import { useActivityQueries } from '@/hooks/useActivityQueries';
-import { useProjectOwner } from '@/hooks/useProjectOwner';
+import { useProjectOwner } from '@/hooks/use-project-owner';
 
 export const Assignees = () => {
   const params = useParams();

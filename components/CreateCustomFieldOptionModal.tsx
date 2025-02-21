@@ -9,12 +9,12 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 import { Separator } from '@/components/ui/separator';
-import { useModalDialog } from '@/hooks/useModalDialog';
+import { useModalDialog } from '@/hooks/use-modal-dialog';
 import { cn } from '@/lib/utils';
 import React, { ReactElement } from 'react';
 import { CustomOptionForm } from './CustomOptionForm';
 import { ProjectAction } from '@/consts';
-import { useProjectAccess } from '@/hooks/useProjectAccess';
+import { useProjectAccess } from '@/hooks/use-project-access';
 import { useParams } from 'next/navigation';
 
 interface Props {

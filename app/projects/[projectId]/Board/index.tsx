@@ -3,19 +3,19 @@ import { secondaryBtnStyles } from '@/app/commonStyles';
 import { CreateCustomFieldOptionModal } from '@/components/CreateCustomFieldOptionModal';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
-import { useProjectAccess } from '@/hooks/useProjectAccess';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
+import { useProjectAccess } from '@/hooks/use-project-access';
+import { useProjectQueries } from '@/hooks/use-project-queries';
 import { cn } from '@/lib/utils';
 import { columns as columnsUtils } from '@/utils/columns';
 import { getColumnSortedTasks, sortTasks } from '@/utils/sort';
 import { closestCorners, DndContext, DragOverlay } from '@dnd-kit/core';
 import { Eye, Plus } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
-import { ColumnContainer } from './ColumnContainer';
-import { TaskDetailsProvider } from './TaskDetailsContext';
-import { TaskDetailsDrawer } from './TaskDetailsDrawer';
-import { TaskItem } from './TaskItem';
-import { useBoardDragAndDrop } from './useBoardDragAndDrop';
+import { ColumnContainer } from './column-container';
+import { TaskDetailsProvider } from './task-details-context';
+import { TaskDetailsDrawer } from './task-details-drawer';
+import { TaskItem } from './task-item';
+import { useBoardDragAndDrop } from './use-board-drag-and-drop';
 import { createPortal } from 'react-dom';
 
 interface Props {

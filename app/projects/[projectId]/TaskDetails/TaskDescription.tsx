@@ -3,13 +3,13 @@ import { secondaryBtnStyles, successBtnStyles } from '@/app/commonStyles';
 import TextEditor from '@/components/TextEditor';
 import { Button } from '@/components/ui/button';
 import { UserCard } from '@/components/UserCard';
-import { useTaskQueries } from '@/hooks/useTaskQueries';
+import { useTaskQueries } from '@/hooks/use-task-queries';
 import { cn } from '@/lib/utils';
 import { formatRelativeTime } from '@/utils/date';
 import { Pen } from 'lucide-react';
 import { useState } from 'react';
-import { useTaskDetails } from '../Board/TaskDetailsContext';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
+import { useTaskDetails } from '../Board/task-details-context';
+import { useProjectQueries } from '@/hooks/use-project-queries';
 import { useParams } from 'next/navigation';
 
 export const TaskDescription = () => {

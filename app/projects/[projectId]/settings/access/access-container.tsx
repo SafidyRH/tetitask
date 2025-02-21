@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { InviteUsers } from './InviteUsers';
-import { ManageAccess } from './ManageAccess';
+import { InviteUsers } from './invite-users';
+import { ManageAccess } from './manage-access';
 
 interface MemberWithUser extends IProjectMember {
   user: Pick<IUser, 'id' | 'name' | 'email' | 'avatar'>;

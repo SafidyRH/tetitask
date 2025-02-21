@@ -1,7 +1,7 @@
 'use client';
-import { useTaskDetails } from '../Board/TaskDetailsContext';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
-import { useTaskQueries, DateUpdates } from '@/hooks/useTaskQueries';
+import { useTaskDetails } from '../Board/task-details-context';
+import { useProjectQueries } from '@/hooks/use-project-queries';
+import { useTaskQueries, DateUpdates } from '@/hooks/use-task-queries';
 import { Badge } from '@/components/ui/badge';
 import { useParams } from 'next/navigation';
 import {

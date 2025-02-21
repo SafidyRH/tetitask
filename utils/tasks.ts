@@ -1,4 +1,4 @@
-import { DateUpdates } from '@/hooks/useTaskQueries';
+import { DateUpdates } from '@/hooks/use-task-queries';
 import { createClient } from './supabase/client';
 
 const supabase = createClient();

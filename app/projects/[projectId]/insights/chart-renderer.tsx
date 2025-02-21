@@ -1,15 +1,15 @@
 'use client';
 
 import { ChartConfig } from '@/components/ui/chart';
-import { useInsightsContext } from '@/contexts/insightsContext';
-import { BarChart } from './Charts/Bar';
-import { ColumnChart } from './Charts/Column';
-import { LineChart } from './Charts/Line';
-import { StackedAreaChart } from './Charts/StackedArea';
-import { StackedBarChart } from './Charts/StackedBar';
-import { StackedColumnChart } from './Charts/StackedColumn';
+import { useInsightsContext } from '@/contexts/insights-context';
+import { BarChart } from './Charts/bar';
+import { ColumnChart } from './Charts/column';
+import { LineChart } from './Charts/line';
+import { StackedAreaChart } from './Charts/stacked-area';
+import { StackedBarChart } from './Charts/stacked-bar';
+import { StackedColumnChart } from './Charts/stacked-column';
 import { generateChartData } from './functions';
-import { SimpleChart } from './SimpleChart';
+import { SimpleChart } from './simple-chart';
 
 const chartConfig = {} satisfies ChartConfig;
 

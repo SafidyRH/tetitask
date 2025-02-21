@@ -14,12 +14,12 @@ import { OtherActions } from './OtherActions';
 import { Participants } from './Participants';
 import { Project } from './Project';
 import { TaskLabels } from './TaskLabels';
-import { useTaskDetails } from '../Board/TaskDetailsContext';
+import { useTaskDetails } from '../Board/task-details-context';
 import { useActivityQueries } from '@/hooks/useActivityQueries';
-import { useCommentQueries } from '@/hooks/useCommentQueries';
-import { useCurrentUser } from '@/hooks/useCurrentUser';
+import { useCommentQueries } from '@/hooks/use-comment-queries';
+import { useCurrentUser } from '@/hooks/use-current-user';
 import { UserCard } from '@/components/UserCard';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
+import { useProjectQueries } from '@/hooks/use-project-queries';
 import { useParams } from 'next/navigation';
 import { toast } from '@/components/ui/use-toast';
 

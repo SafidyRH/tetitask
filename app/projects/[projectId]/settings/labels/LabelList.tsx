@@ -16,7 +16,7 @@ import { defaultFieldColor } from '@/consts/colors';
 import { CreateOrEditLabelForm } from '@/components/CreateOrEditLabelForm';
 import { createClient } from '@/utils/supabase/client';
 import { useToast } from '@/components/ui/use-toast';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
+import { useProjectQueries } from '@/hooks/use-project-queries';
 
 interface Props {
   labels: ICustomFieldData[];

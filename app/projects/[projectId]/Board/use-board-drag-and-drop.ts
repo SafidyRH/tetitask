@@ -1,6 +1,6 @@
 import { toast } from '@/components/ui/use-toast';
 import { useActivityQueries } from '@/hooks/useActivityQueries';
-import { useCurrentUser } from '@/hooks/useCurrentUser';
+import { useCurrentUser } from '@/hooks/use-current-user';
 import { canMoveTask, moveTaskDown, moveTaskUp } from '@/utils/move-task';
 import { tasks as tasksUtils } from '@/utils/tasks';
 import {

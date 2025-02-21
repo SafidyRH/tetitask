@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectTemplateCard } from './ProjectTemplateCard';
+import { ProjectTemplateCard } from './project-template-card';
 
 export const ProjectTemplates = () => {
   return (

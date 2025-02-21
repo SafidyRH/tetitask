@@ -15,9 +15,9 @@ import {
 import { User } from '@supabase/supabase-js';
 import { Plus, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { ColumnLabelColor } from './ColumnLabelColor';
-import { ColumnMenuOptions } from './ColumnMenuOptions';
-import { TaskItem } from './TaskItem';
+import { ColumnLabelColor } from './column-label-color';
+import { ColumnMenuOptions } from './column-menu-options';
+import { TaskItem } from './task-item';
 import { useDroppable } from '@dnd-kit/core';
 import { getLowestColumnPosition } from '@/utils/sort';
 import {

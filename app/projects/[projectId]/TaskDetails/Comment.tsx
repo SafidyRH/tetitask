@@ -10,8 +10,8 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { UserCard } from '@/components/UserCard';
 import { useActivityQueries } from '@/hooks/useActivityQueries';
-import { useCommentQueries } from '@/hooks/useCommentQueries';
-import { useCurrentUser } from '@/hooks/useCurrentUser';
+import { useCommentQueries } from '@/hooks/use-comment-queries';
+import { useCurrentUser } from '@/hooks/use-current-user';
 import { cn } from '@/lib/utils';
 import { Ellipsis, Pen, Trash } from 'lucide-react';
 import { FC, useState } from 'react';
@@ -26,7 +26,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
-import { useTaskDetails } from '../Board/TaskDetailsContext';
+import { useTaskDetails } from '../Board/task-details-context';
 import { toast } from '@/components/ui/use-toast';
 
 interface Props {

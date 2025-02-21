@@ -3,13 +3,13 @@ import { successBtnStyles } from '@/app/commonStyles';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/components/ui/use-toast';
-import { useDebounce } from '@/hooks/useDebounce';
+import { useDebounce } from '@/hooks/use-debounce';
 import { cn } from '@/lib/utils';
 import { emails } from '@/utils/emails';
 import { createClient } from '@/utils/supabase/client';
 import { Loader2, User } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { RoleSelect } from './RoleSelect';
+import { RoleSelect } from './role-select';
 
 interface Props {
   projectName: string;

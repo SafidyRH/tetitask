@@ -1,9 +1,9 @@
 'use client';
 import { toast } from '@/components/ui/use-toast';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
+import { useProjectQueries } from '@/hooks/use-project-queries';
 import { useParams } from 'next/navigation';
-import { TaskDetailsProvider } from '../Board/TaskDetailsContext';
-import { SingleTaskDetails } from './TaskDetails';
+import { TaskDetailsProvider } from '../Board/task-details-context';
+import { SingleTaskDetails } from './task-details';
 
 export const TaskDetailsWrapper = ({ task }: { task: ITaskWithOptions }) => {
   const { projectId } = useParams();

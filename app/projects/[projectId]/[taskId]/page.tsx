@@ -1,5 +1,5 @@
 import { tasks } from '@/utils/tasks';
-import { TaskDetailsWrapper } from './TaskDetailsWrapper';
+import { TaskDetailsWrapper } from './task-details-wrapper';
 
 interface Props {
   params: Promise<{

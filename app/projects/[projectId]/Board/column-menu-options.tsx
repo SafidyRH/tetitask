@@ -19,7 +19,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
-import { useModalDialog } from '@/hooks/useModalDialog';
+import { useModalDialog } from '@/hooks/use-modal-dialog';
 import { cn } from '@/lib/utils';
 import { Dialog } from '@radix-ui/react-dialog';
 import { Ellipsis, EyeOff, Pencil, Trash } from 'lucide-react';

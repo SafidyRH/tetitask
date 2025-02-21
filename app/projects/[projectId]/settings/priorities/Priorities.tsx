@@ -4,7 +4,7 @@ import { CreateCustomFieldOptionModal } from '@/components/CreateCustomFieldOpti
 import { CustomFieldOptions } from '@/components/CustomFieldOptions';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
+import { useProjectQueries } from '@/hooks/use-project-queries';
 import { cn } from '@/lib/utils';
 import { compareAndUpdateItems, hasChanges } from '@/utils/array-utils';
 import { createClient } from '@/utils/supabase/client';

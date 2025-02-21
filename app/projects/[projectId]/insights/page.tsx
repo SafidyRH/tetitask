@@ -1,6 +1,6 @@
 import { createClient } from '@/utils/supabase/server';
 import { redirect } from 'next/navigation';
-import { Insights } from './Insights';
+import { Insights } from './insights';
 
 interface Props {
   params: Promise<{ projectId: string }>;

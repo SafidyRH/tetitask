@@ -6,11 +6,11 @@ import { UserAvatar } from '@/components/Avatar';
 import { useToast } from '@/components/ui/use-toast';
 import { createClient } from '@/utils/supabase/client';
 import { useState, useMemo } from 'react';
-import { RoleSelect } from './RoleSelect';
-import { useProjectAccess } from '@/hooks/useProjectAccess';
+import { RoleSelect } from './role-select';
+import { useProjectAccess } from '@/hooks/use-project-access';
 import { useAccessStore } from '@/stores/useAccessStore';
 import { ProjectAction } from '@/consts';
-import { useProjectOwner } from '@/hooks/useProjectOwner';
+import { useProjectOwner } from '@/hooks/use-project-owner';
 import { Badge } from '@/components/ui/badge';
 
 interface MemberWithUser extends IProjectMember {

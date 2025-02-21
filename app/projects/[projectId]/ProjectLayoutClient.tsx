@@ -1,6 +1,6 @@
 'use client';
 
-import { prefetchProjectOwner } from '@/hooks/useProjectOwner';
+import { prefetchProjectOwner } from '@/hooks/use-project-owner';
 import { useQueryClient } from '@tanstack/react-query';
 import { useParams } from 'next/navigation';
 import { useEffect } from 'react';

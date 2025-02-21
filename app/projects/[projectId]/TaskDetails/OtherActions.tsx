@@ -1,9 +1,9 @@
 'use client';
-import { useTaskDetails } from '../Board/TaskDetailsContext';
-import { useTaskQueries } from '@/hooks/useTaskQueries';
+import { useTaskDetails } from '../Board/task-details-context';
+import { useTaskQueries } from '@/hooks/use-task-queries';
 import { Button } from '@/components/ui/button';
 import { Delete, Loader2, Trash } from 'lucide-react';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
+import { useProjectQueries } from '@/hooks/use-project-queries';
 import { useParams } from 'next/navigation';
 import { toast } from '@/components/ui/use-toast';
 import { useState } from 'react';

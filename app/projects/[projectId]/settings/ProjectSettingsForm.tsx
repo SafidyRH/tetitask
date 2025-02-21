@@ -14,7 +14,7 @@ import { useRouter } from 'next/navigation';
 import { CloseProjectDialog } from '../../components/CloseProjectDialog';
 import { DeleteProjectDialog } from '../../components/DeleteProjectDialog';
 import TextEditor from '@/components/TextEditor';
-import { useProjectAccess } from '@/hooks/useProjectAccess';
+import { useProjectAccess } from '@/hooks/use-project-access';
 import { useAccessStore } from '@/stores/useAccessStore';
 import { ProjectAction } from '@/consts';
 

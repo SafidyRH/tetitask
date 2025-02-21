@@ -1,7 +1,7 @@
 import { createClient } from '@/utils/supabase/server';
 import { redirect } from 'next/navigation';
 import { SettingsLayout } from '../SettingsLayout';
-import { AccessContainer } from './AccessContainer';
+import { AccessContainer } from './access-container';
 
 interface Props {
   params: Promise<{ projectId: string }>;

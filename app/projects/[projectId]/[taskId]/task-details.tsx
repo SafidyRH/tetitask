@@ -2,7 +2,7 @@
 import { Separator } from '@/components/ui/separator';
 import { UserCard } from '@/components/UserCard';
 import { useEffect } from 'react';
-import { useTaskDetails } from '../Board/TaskDetailsContext';
+import { useTaskDetails } from '../Board/task-details-context';
 import { TaskDetails } from '../TaskDetails';
 import { HeaderSection } from '../TaskDetails/HeaderSection';
 

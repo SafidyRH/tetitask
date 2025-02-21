@@ -2,12 +2,12 @@
 import { CustomFieldTagRenderer } from '@/components/CustomFieldTagRenderer';
 import { LabelBadge } from '@/components/LabelBadge';
 import StackedAvatars from '@/components/StackedAvaters';
-import { prefetchTask } from '@/hooks/useTaskQueries';
+import { prefetchTask } from '@/hooks/use-task-queries';
 import { UniqueIdentifier } from '@dnd-kit/core';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { useQueryClient } from '@tanstack/react-query';
-import { useTaskDetails } from './TaskDetailsContext';
+import { useTaskDetails } from './task-details-context';
 
 interface Props {
   item: ITaskWithOptions;

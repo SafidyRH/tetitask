@@ -6,14 +6,14 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { toast } from '@/components/ui/use-toast';
-import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
-import { useProjectQueries } from '@/hooks/useProjectQueries';
-import { useTaskQueries } from '@/hooks/useTaskQueries';
+import { useCopyToClipboard } from '@/hooks/use-copy-to-clipboard';
+import { useProjectQueries } from '@/hooks/use-project-queries';
+import { useTaskQueries } from '@/hooks/use-task-queries';
 import { Check, Copy, Ellipsis, ExternalLink, Pen, Trash } from 'lucide-react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
-import { useTaskDetails } from '../Board/TaskDetailsContext';
+import { useTaskDetails } from '../Board/task-details-context';
 
 interface Props {
   setIsEditing: (isEditing: boolean) => void;

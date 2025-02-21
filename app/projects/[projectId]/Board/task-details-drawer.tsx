@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/sheet';
 import { TaskDetails } from '../TaskDetails';
 import { HeaderSection } from '../TaskDetails/HeaderSection';
-import { useTaskDetails } from './TaskDetailsContext';
+import { useTaskDetails } from './task-details-context';
 
 export const TaskDetailsDrawer = () => {
   const {

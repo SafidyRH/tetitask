@@ -1,7 +1,7 @@
 import { users, type IUser } from '@/utils/users';
 import { createClient } from '@/utils/supabase/server';
 import { notFound } from 'next/navigation';
-import { ProfileView } from './ProfileView';
+import { ProfileView } from './profile-view';
 
 async function getUser(profileId: string): Promise<IUser> {
   try {
